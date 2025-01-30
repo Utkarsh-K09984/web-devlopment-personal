@@ -1,0 +1,48 @@
+
+<!-- VERY VERY IMPORTANT TOPIC  -->
+<!-- but suggested to use less in your website -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        /* Position and order of appearance: the order in which your CSS rules appear */
+        /* Specificity: an algorithm that determines which CSS selector has the strongest match */
+        /* specificity 1 */
+        /* Universal Selector: 0
+            Element selectors and pseudo-elements: 1
+            Class selectors, attribute selectors, and pseudo-classes: 10
+            ID selectors: 100
+            Inline styles: 1000 */
+        h1{
+            color: aqua;
+        }
+        /* specificity of h1 = 1 and .yellow is 10 then 
+        total specificity is h1.yellow  (h1+.yellow) = (1+10) = 11 */
+        h1.yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple !important;
+        }
+        [data-x=a]{
+            color: cyan;
+            background-color: red;
+        }
+    </style>
+    <!-- !important > Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
+</head>
+<body>
+    <div>
+        <!-- if we do the inline then the properties applied on the container in the css file will not executable  -->
+        <h1 style="color: green;" class="yellow cred cpurple" data-x="a">CSS  specificity</h1>
+    </div>
+</body>
+</html>

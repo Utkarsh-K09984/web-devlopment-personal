@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+
+.lorem1{
+    /* capitalize the first letter of the every word in the line */
+    text-transform: capitalize;
+
+    /* uppercase the every letter  */
+    /* text-transform: uppercase; */
+
+    text-decoration: underline;
+    text-decoration-color: pink;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 4px;
+}   
+
+
+.lorem{
+    width: 20px;
+    background-color: aqua;
+    border: 2px solid black ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

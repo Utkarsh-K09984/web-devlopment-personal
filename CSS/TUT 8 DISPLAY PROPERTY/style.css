@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    box-sizing: border-box;
+    border: 2px solid black;
+    /* width: 200px; */
+    /* to remove the issue of the inline element top margin and padding  */
+    /* we can do the display inline-block  */
+    /* with this any block element behave like an inline element but inherit some properties of block element  */
+    width: 30vw;
+    display: inline-block;
+    padding: 32px;
+    margin: 40px;
+}
+
+/* dislpay none -> remove the whole container from the webpage and it shows that the page didn't exist  */
+
+.boxy{
+    /* display: none; */
+
+    /* visibility -> hidden remove the appearence of the container but didn't remove the space   */
+    /* visibility: hidden; */
+display: gridx1;
+    justify-content: center;
+}
+
+/* .box2{
+    display: flex;
+    justify-content: center;
+} */
+/* in inline element there is no top margin or top padding  */
+/* also we cannot change the height and width of the inline element  */
+.box1{
+    /* justify-content: center; */
+    border: 2px solid black;
+    padding: 33px;
+    margin: 40px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+        }
+        .box:first-line{
+            color: red;
+        }
+        /* div,[data-color = "primary"]{
+            background-color: aqua;
+            padding: 30px;
+            margin: 2px; 
+        } */
+        .boxes::before{
+            content: "this is the good container";
+        }
+        .boxes::after{
+            content: "this is the bad container";
+        }
+        .box::first-letter{
+            color: peru;
+            font-size: 50px;
+            
+        }
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+        input::placeholder{
+            color: peru;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam maxime consequatur excepturi inventore aliquam amet? Optio libero corporis magnam? Temporibus dicta quo, repellat unde, voluptate saepe veritatis in itaque sapiente quasi necessitatibus autem distinctio incidunt. Est magnam veritatis iste libero debitis impedit at numquam nesciunt fugiat quisquam, distinctio temporibus vel repudiandae quidem excepturi, vitae reiciendis magni, provident minima iusto officia consequatur! Quis repellat optio repellendus praesentium nulla voluptates in quasi consectetur aut numquam rerum explicabo reprehenderit exercitationem minus, deleniti nihil vel veritatis quos sit nemo, obcaecati impedit corporis nisi? Voluptatem voluptates sint soluta accusamus libero quisquam aliquid facilis hic optio fuga, et ab ea. Earum ipsam ullam quaerat dolores dicta distinctio suscipit laudantium ipsa magni inventore consequatur esse sit, nemo asperiores quas facere maiores veniam commodi, ad quis, alias nostrum modi similique. Ut rem repudiandae consectetur recusandae id quasi voluptate voluptas soluta ex quibusdam doloremque fugit maxime, optio nemo est, ducimus amet qui beatae maiores nostrum distinctio suscipit sapiente facere accusantium. Eum voluptatum, enim expedita eius accusantium molestiae assumenda voluptates, aperiam eligendi debitis itaque voluptatibus incidunt adipisci nobis nam officia cupiditate rem dignissimos sapiente ullam, ab nulla. Quaerat impedit exercitationem est aliquid mollitia sint adipisci, delectus itaque. Ea, molestiae amet veniam deleniti pariatur totam hic excepturi earum animi est, doloribus reiciendis ipsa sit suscipit deserunt nihil commodi id qui necessitatibus temporibus quo! Quos cumque, voluptas quidem veniam laboriosam, voluptatem amet qui suscipit, tenetur consectetur libero. Veniam maxime, totam reiciendis rem doloremque quidem hic eum exercitationem sint eaque modi quod unde delectus optio, quo accusamus debitis soluta distinctio placeat cupiditate iure, suscipit vitae laudantium! Suscipit sint eaque natus quas atque reprehenderit voluptas tenetur vitae, in, minus obcaecati voluptatum necessitatibus tempore corrupti temporibus nobis. Dolore asperiores fugit excepturi mollitia a quo, repellendus culpa enim inventore commodi saepe iste, quibusdam repudiandae, officia non nostrum perferendis consequuntur earum? Repudiandae culpa voluptatibus vitae illum, odio quos optio dolorem exercitationem accusamus voluptatum quisquam, adipisci ab porro? Quos harum magnam excepturi illum atque hic nisi deserunt rem quasi laudantium. Fugit eaque voluptates sapiente illum, atque excepturi amet quas temporibus quo saepe obcaecati repudiandae fuga, itaque autem debitis nobis neque? Vitae molestiae soluta laudantium officiis. Quaerat reiciendis quibusdam architecto, laborum optio non. Quasi voluptate culpa sequi ratione quas vero iusto ab quidem? Corporis labore sequi eos molestias. Velit placeat modi, culpa aut officia totam molestiae deserunt voluptatibus harum reiciendis aperiam dolorem, ad dignissimos quasi, dolores odit nulla nostrum. Perferendis quas a exercitationem, quod, consequuntur nemo mollitia iste fugiat voluptate totam, veritatis est. Sed ipsa voluptas vel laborum rerum amet sequi earum laboriosam iste minima. Tempora accusantium rem dicta placeat corporis! Maxime debitis molestias nostrum neque quo, expedita, eaque libero enim mollitia cupiditate quod veniam. Recusandae porro eius, harum reiciendis pariatur dolor numquam.</div>
+        <div data-color="primary" class="box">this is the box </div>
+        <div class="box">this is the box</div>
+        <input type="text " placeholder="enter your name">
+    </div>
+</body>
+</html>

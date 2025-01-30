@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.box {
+    border: 2px solid black;
+    height: 150px;
+    width: 50vw;
+    padding: 3px;
+    margin: 4px;
+    
+}
+/* by default position is static */
+.box1{
+    /* it stick at top with the gap of 3px even if we scroll it will hang upside */
+    background-color: aqua;
+    position: sticky;
+    top: 3px;
+}
+/* relative position change the position from its current position   */
+.box2{
+    background-color: lightblue;
+    position: relative;
+    left: 20px;
+    /* zindex push back this container behind the box 1 as it's z index is negative  */
+    z-index: -1;
+}   
+
+/* absolute position change the position of the element and it removes the container from the order of execution */
+.box3{  
+    background-color: lightyellow;
+    position: absolute;
+/* n    ow it will not change from it's current position , it will change its position from the it's upper positioned element but here no element is positioned before the box3 so it will change its position relative from the box3 */
+    top: 50%;
+}
+
+
+
+
+.box4{
+    /* in this if position is fixed it will remain at its position even if we scroll the page  */
+    background-color: lightpink;
+    position: fixed;
+    bottom: 0px;
+}
+
+.parent{
+    margin: 34px;
+    padding: 2px;
+    border: 2px solid blue ;
+    /* EXCEPTION IMPORTANT  */
+    /* transform , filter and perspective properties can also make an element appear as positioned  */
+    /* so it's child will positioned relative to the parent class even though it is not positioned so that is exception */
+    position: relative;
+    height: 150vh;
+    
+}

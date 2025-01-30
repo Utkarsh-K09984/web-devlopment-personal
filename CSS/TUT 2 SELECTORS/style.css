@@ -1,0 +1,67 @@
+/* element selector  */
+div{
+    background-color: red;
+    color: white   ;
+}
+
+
+/* class selector */
+.red{
+    background-color: blue;
+}
+/* id seletor  */
+#green{
+    background-color: green;
+}
+
+/* child selector */
+div > article > p {
+    background-color: cyan;
+}
+
+/* descendant selector  */
+div p{
+    color: blue;
+}
+
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* pseudo selector  */
+/* a:visited{
+    color: cadetblue;
+}
+
+a:link{
+    color: brown;
+}
+
+a:active{
+    background-color: yellow;
+}
+
+a:hover{
+    background-color: greenyellow;
+} */
+
+.insta{
+    color: brown;
+}
+.insta:hover{
+    color: black;
+    background-color: lightblue;
+    text-decoration: none;
+}
+
+.insta:visited{
+    color: black;
+}
+
+.insta:active{
+    background-color: red;
+}
+
+

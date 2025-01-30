@@ -1,0 +1,15 @@
+<head>
+     <meta charset=' "UTF-8">
+     <meta name=" "viewport" content=' "width-device-width, initial-
+    <title>Colors</title>
+     <style>
+         /* https://codepen. .io/web-dot-dev/pen/ZELGraM */
+         h1 {
+             /* color:darkred; */
+             /* color: #0BEE0B; */
+             color: rgb(23,
+                                    78 )
+                              6,
+         }
+     </style>
+</head>

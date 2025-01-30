@@ -1,0 +1,52 @@
+.box {
+    border: 2px solid black;
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    margin-bottom: 30px;
+    /* box shadow  : h-offest v-offset blue spread colour inset  */
+    box-shadow: inset rgb(0, 68, 85) 0px 2px 63px 0px;
+}
+
+.boxy {
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+
+    /* box shadow  : h-offest v-offset blue spread colour inset  */
+    box-shadow: inset rgb(0, 68, 85) 0px 2px 63px 0px;
+
+}
+
+
+.boxy>p {
+    text-shadow: 0px 1px 1px #ed1717;
+    outline: 3px solid black;
+    outline-offset: 20px;
+}
+
+
+
+.unlist li{
+    list-style: devanagari;
+    background-color: aquamarine;
+    /* list-style-type: "😘"; */
+    list-style-position: inside;
+    border: 2px solid black;
+    margin: 20px;
+    padding:43px;
+    list-style-image: url("https://th.bing.com/th/id/OIP.dk9rlXyYcavShhaSecZrbgAAAA?rs=1&pid=ImgDetMain");
+}
+
+.unlist{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,33 @@
+body{
+    background-color: bisque;
+}
+
+/* @media not/only mediatype and (expression)
+    {CSS-CODE;} */
+
+
+.box{
+    background-color: steelblue;
+    border: 3px solid black;
+    height: 30px;
+    width: 50px;
+    margin: 19px;
+}
+
+.boxes{
+    display: flex;
+}
+@media only screen and (max-width : 600px){
+    body{
+        background-color: cornflowerblue;
+    }
+    .boxes{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (orientation : portrait){
+    .boxes{
+        border: 3px solid purple;
+    }
+}

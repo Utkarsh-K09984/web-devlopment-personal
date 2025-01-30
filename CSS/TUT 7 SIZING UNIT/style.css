@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+
+.box {
+    border: 2px solid black;
+    background-color: lightyellow;
+
+    /* it is non responsive unit  */
+    /* width: 1920px; */
+
+    /* responsive unit is  vw --> viewport width  */
+    width: 50vw;
+    box-sizing: border-box;
+
+
+    /* margin auto apply the same margin both the sides of the element  */
+    margin: auto;
+
+}
+
+
+
+.boxone {
+    border: 1px solid darkgreen;
+    width: 80vw;
+    height: 35vh;
+    margin: 30px auto;
+    background-color: aquamarine;
+}
+
+.boxone p {
+
+
+
+    /* EM */
+    /* em is the x times the size that it has to be allocated 
+    for example p has the default size -> 16px and we have updated fontsize -> 2rem 
+    which indicates final fontsize will be 32 px which is 16 x 2 ;  */
+
+
+    /* font-size: 2em; */
+
+    /* REM */
+    /* rem is x times the size of the root element 
+    and the root element is html so it will multiply root element size to the given x 
+    for example -> we set the root element size be 3px so if we give 4rem 
+    it will multiply 4 x 3 = 12px  */
+
+    font-size: 1.5rem;
+    width: 50%;
+    border: 2px solid green;
+
+
+}
+
+
+.mycont{
+    border: 2px solid black;
+    background-color: pink;
+    color: blue;
+    
+    /* in vmax it will take the x percentage of the maximum from width and the height */
+    width: 50vmax;
+
+
+
+    /* in vmin it will take the x percentage of the minimum from width and the height */
+    width: 80vw;
+    margin: auto;
+    /* transform: rotate(90deg); */
+
+    box-sizing: border-box;    
+
+    /* minimum height will remain 30vh and if there is more content adding into the container content will be added and the height will be increased */
+    min-height: 30vh;
+}
+
+
+.mycont2{
+    border: 2px solid black;
+    background-color: lightgreen;
+    margin: 30px auto;
+    /* max height will remain the given height and it will not increase on inserting the data  */
+    /* then data will be overflowed from the container      */
+    max-height: 10vh;
+    width: 80vw;
+}
