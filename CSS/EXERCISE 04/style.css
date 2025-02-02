@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar{
+    width: 100vw;
+    height: 10vh;
+    border: 2px solid black;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    background-color: beige;
+}
+.container{
+    border: 2px solid black;
+    height: 100vh;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("https://th.bing.com/th/id/R.444ee05f7214d0733408ed264aa162c0?rik=y5VdqX%2boTOhlbg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f04%2flandscape-wallpaper-hd-backgrounds.jpg&ehk=NstFyx3yEGqPuC1FsArlbLzq%2bbCyPnobk4HDI9yiGR4%3d&risl=&pid=ImgRaw&r=0");
+}
+.child{
+    height: 70vh;
+    border: 2px solid black;
+    margin: 30px;
+    width: 40vw;
+    background-color: beige;
+    font-size: 40px;
+    padding: 19px;
+}
+.cont2 {
+    width: 60vw;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;  /* Center content */
+    justify-content: center;
+    font-size: 40px;
+    text-align: center; /* Center the text inside the h1 */
+    
+}
+
+/* .child p{
+    overflow: hidden;
+} */
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    background-color: beige;
+    justify-content: center;
+    display: flex;
+    padding: 8px;
+}
+
+.logo{
+    border: 3px solid black;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+
+.logo-bg{
+    width: 70px;
+    height: 70px;
+
+}
