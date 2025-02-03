@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contain{
+            border: 2px solid black;
+            display: grid;
+            /* we can name the column line like first line we named :pehla and second line :doosra */
+            grid-template-columns: [pehla] 120px  [doosra] 100px [teesra];
+            background-color: aliceblue;
+            /* we can also name the row line like first line we named :pehli and second line :doosri */
+            grid-template-rows:[pehli] 50px [doosri] 60px [teesri] 80px ;
+        }
+        .box{
+            border: 2px solid green;
+            height: 30px ;
+            width: 30px;
+        }
+        .item-4{
+            grid-row: pehli/doosri;
+            grid-column: pehla/doosra;
+        }
+        .item-1{
+            grid-row: 1/2;
+            grid-column: 1/2;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="box item-1">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box item-4 ">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+</html>

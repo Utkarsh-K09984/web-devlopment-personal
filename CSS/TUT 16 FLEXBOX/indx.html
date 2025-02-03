@@ -6,31 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .flexbox{
-            border: 2px solid green;
-            display: flex;
-            justify-content: space-around;
-            /* flex-direction: row-reverse; */
-            align-items: center;
-            height: 50vh;
-
+        * {
+            margin: 0;
+            padding: 0;
         }
-        .flx{
+
+        .flexbox {
+
+            /* there is no justify item in flexbox  */
+            border: 2px solid green;
+            width: 100vw;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            /* flex-flow: <flex-direction> <flex-wrap>; */
+            flex-flow: column wrap;
+            /* align-items: center; */
+            height: 80vh;
+            gap: 5px 10px;    
+            /* row-gap: 5px;
+            column-gap: 10px; */
+        }
+
+        .flx {
             height: 150px;
             width: 150px;
             background-color: floralwhite;
-            margin: 4px;
+            /* margin: 4px;  */
             border: 2px solid black;
+        }
+
+        /* default order is 0  */
+        .o-1{
+           flex-grow: 2;            
+        }
+        .o-2{
+            order: 2;
+        }
+        .o-3{
+            order: 3;
         }
     </style>
 </head>
 
-<body>
+<body>  
     <div class="flexbox">
-        <div class="flx">1</div>
-        <div class="flx">2</div>
+        <div class="flx o-1">1</div>
+        <div class="flx o-2">2</div>
+        <div class="flx">3</div>
+        <div class="flx ">4</div>
         <div class="flx">3</div>
         <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
+        <div class="flx">4</div>
+        <div class="flx">3</div>
     </div>
 </body>
 
