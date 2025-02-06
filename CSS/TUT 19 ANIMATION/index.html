@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            height: 40vh;
+            width: 50vw;
+            border: 2px solid black;
+            background-color: peru;
+        }
+        .box{
+            background-color: aqua;
+            height: 30px ;
+            width: 50px;
+            /* transition-duration: 3s;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            transition-delay: 3s; */
+            /* transform : {property on which transition is applied } {time } {type} {transition-delay} */
+            transition: all 3s cubic-bezier(1, 0, 0, 0.96) 1s;
+        }
+        .transform{  
+            transform: translateX(20vw ) translateY(20vh);
+            background-color: cornflowerblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box transform"></div>
+    </div>
+</body>
+</html>
